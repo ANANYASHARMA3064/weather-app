@@ -8,6 +8,15 @@ import humidity from '../assets/humidity.png'
 import snow from '../assets/snow.png'
 import windy from '../assets/windy.png'
 const Weather  = () => {
+  const search = async(city)=>{
+    try{
+      const url=`https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=${ef836e6b4119eb720bf8897b76954068}`
+      const response = await fetch(url);
+      const data =response.json();
+    }catch(error){
+
+    }
+  }
   return (
     <div className="weather">
         <div className="searchbar">
